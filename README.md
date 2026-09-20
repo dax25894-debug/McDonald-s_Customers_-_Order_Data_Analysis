@@ -71,4 +71,99 @@ GROUP BY
 ORDER BY 
     total_revenue DESC
 ```
+This analysis examines two dimensions of the business:
+1. Menu-item revenue — which products generate the most revenue?
+2. Customer distribution by city — which cities represent the largest customer bases?
 
+The objective is to identify where revenue is concentrated and understand which products are most commercially important.
+### 1 Menu Items: Revenue Concentration
+Total revenue across the analyzed menu items is approximately $1.05M.
+|Rank|Menu Item     |Revenue      |Revenue Share|
+|----|--------------|-------------|-------------|
+|1	 |Big Mac	    |$221,186.70  |21.05%       |
+|2	 |McChicken	    |$189,420.00  |18.03%       |
+|3	 |McFlurry	    |$139,956.00  |13.32%       |
+|4	 |Cheeseburger	|$124,674.20  |11.86%       |
+|5	 |Large Fries	|$121,275.00  |11.54%       |
+|6	 |Fries	        |$97,988.00	  |9.32%        |
+|7	 |Coke	        |$80,563.00	  |7.67%        |
+|8	 |Coffee	    |$75,796.50	  |7.21%        |
+
+#### **key Finding: Big Mac is the largest individual revenue driver**
+The **Big Mac generates $221.2K**, representing approximately **21.0% of total revenue**.
+
+It leads **McChicken by approximately $31.8K**, meaning Big Mac revenue is around **16.8% higher than McChicken revenue**.
+
+However, the difference is not large enough to suggest that the business depends exclusively on one product
+#### **Revenue concentration is driven by a small group of products**
+The three largest revenue generators are:
+- Big Mac
+- McChicken
+- McFlurry
+
+Together, they generate **approximately $550.6K**, or **52.4% of total menu revenue**.
+
+This is an important business insight: **more than half of the analyzed revenue comes from just three of eight menu items.**
+
+The **top five products** account for approximately **75.8%** of total revenue, indicating substantial revenue concentration around a relatively small portion of the menu.
+
+### 2. City Analysis: Customer Concentration
+After standardizing inconsistent city capitalization in the customer data, the customer distribution is:
+
+|Rank  |	  City	|Customers	|Customer Share|
+|------|------------|-----------|--------------|
+|1     |   Krakow	|2,928	    | 29.28%       |
+|2	   |   Warsaw	|2,886	    |28.86%        |
+|3	   |   Gdansk	|2,732	    |27.32%        |
+|4	   |   Poznan	|1,454	    |14.54%        |
+|Total |	        |10,000	    |100%          |
+
+#### The three largest cities dominate the customer base
+
+**Krakow, Warsaw and Gdansk** collectively account for:
+
+**8,546** customers → **85.46%** of the entire customer base.
+
+**Poznan** contributes: **1,454** customers → **14.54%.**
+
+This creates a clear distinction between the three larger markets and Poznan.
+
+### Comparing the Cities
+#### Krakow vs Warsaw
+Krakow has the largest customer base with 2,928 customers, while Warsaw has 2,886.
+
+The difference is **only:42** customers or approximately **1.5%** of Krakow's customer count.
+
+Therefore, the two cities have almost identical customer penetration in this dataset.
+
+#### Gdansk
+Gdansk has 2,732 customers, which is:
+
+- 196 fewer than Krakow 
+- 154 fewer than Warsaw
+
+Despite being the third-largest city in the dataset, Gdansk still represents 27.3% of all customers, making it a major market rather than a marginal one.
+#### Poznan
+Poznan has 1,454 customers, representing 14.5% of the total customer base.
+
+Its customer base is approximately:
+
+- 50.3% of Krakow's
+- 50.4% of Warsaw's
+- 53.2% of Gdansk's
+
+### Product Concentration vs Geographic Concentration
+One of the most interesting findings is the difference between product concentration and customer concentration.
+
+**Product side**
+
+The top three menu items generate **52.4%** of revenue:
+
+**Geographic side**
+
+The top three cities contain 85.46% of customers:
+This suggests two different forms of concentration:
+
+**Revenue is concentrated around a small number of products, while customers are concentrated across three major cities.**
+
+The business therefore has a relatively focused product revenue structure combined with a geographically concentrated customer base.
